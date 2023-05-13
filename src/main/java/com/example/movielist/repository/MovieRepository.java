@@ -1,2 +1,10 @@
-package com.example.movielist.repository;public class MovieRepository {
+package com.example.movielist.repository;
+
+import com.example.movielist.entity.MovieEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MovieRepository extends JpaRepository<MovieEntity,Long>{
+
 }
